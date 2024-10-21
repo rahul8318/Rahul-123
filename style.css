@@ -83,12 +83,9 @@ nav ul li a:hover::after{
     width: 100%;
 }
 .header-text{
-    margin-top: 17%;
+    /* margin-top: 17%; */
     font-size: 30px;
     margin-left: 40px; 
-}
-.header-text p{
-    margin-left: 40px;
 }
 .header-text h1{
     font-size: 50px;
@@ -98,33 +95,39 @@ nav ul li a:hover::after{
     color: #ff004f;
 }
 .png{
-    height: 450px;
-    width: 450px;
-    position: absolute;
-    /* background-color: red; */
-    left: 65%;
-    top: 160px;
-    object-fit: cover;
-    cursor: pointer;
+     display: flex;
+    align-items: center; 
+ 
 }
-
-.png img{
-    height: 100%;
+.header-half{
+    display: flex;
+    align-items: center;
+    gap: 25vw;
+    height: 80vh;
     width: 100%;
 }
-.png3{
-    height: 500px;
-    width: 400px;
-    /* background-color: red; */
-    background-image: url(rahul1.png);
-    background-size: cover;
+
+/* .png img{
+    height: 100%;
+    width: 100%;
+} */
+.png .png1{
     position: absolute;
-    top: -55px;
+    z-index: 1;
+    height: 490px;
+    width: 390px;
+    object-fit: cover;
+    object-position:0px 0px;
     border-radius: 10px;
-    overflow: hidden;
+    margin-bottom: 90px
 }
+
 .png .png2{
-    /* animation: scale .3s   infinite  ; */
+    position: relative;
+    height: 410px;
+    width: 450px;
+    
+    
 }
 @keyframes scale {
     0%{
@@ -398,7 +401,7 @@ form .btn2{
     cursor: pointer;
 }
 .copyright{
-    width: 100vw;
+    width: 100%;
     text-align: center;
     padding: 25px 0;
     background: #262626;
