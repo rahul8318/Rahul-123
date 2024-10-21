@@ -171,6 +171,7 @@
     }
     .about-col-2 p{
         font-size: 15px;
+        line-height: 25px;
         /* margin-right: 30px; */
     }
     .tab-titles .tab-links{
@@ -202,6 +203,128 @@
     }
     .contact-right form .btn{
         margin-left: 40px;
+    }
+    .contact-right textarea::placeholder,input::placeholder{
+        font-size: 15px;
+    }
+    .copyright{
+        font-size: 10px;
+        letter-spacing: 3px;
+        width: 100%;
+    }
+    
+}
+/* 320 */
+@media only screen and (max-width:320px) {
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100%;
+        padding-top: 50px;
+        z-index: 8;
+        transition: right 0.5s;
+    }
+     nav ul li{
+        display: block;
+        margin: 25px;
+        z-index: 5;
+        
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top:25px ;
+        left: 25px;
+        cursor: pointer;
+    }
+    /* img */
+    .header-half{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .header-text{
+        order: 2;
+        line-height: 40px;
+        margin-left: 0px;
+        
+    }
+    .header-text p{
+        font-size: .7em;
+        
+    }
+    .header-text h1{
+        font-size: .8em;
+        
+    }
+    .png{
+        margin-top: 18vh;
+        margin-left: 10px;
+    }
+    .png .png1{
+        height: 340px;
+        width: 270px;
+    }
+    .png .png2{
+    height: 250px;
+    width: 270px;
+    }
+    .about-col-1{
+        flex-basis: 100%;
+        margin-right: 50px;
+    }
+    .sub-title{
+        margin-top: 40px;
+        position: relative;
+        left: -40px;
+        width: 250px;
+    }
+    .about-col-2{
+        margin-left: 40px;
+        flex-basis: 40%;
+        width: 250px;
+    }
+    .about-col-2 p{
+        font-size: 10px;
+        line-height: 20px;
+        margin-top: -10px;
+        /* margin-right: 30px; */
+    }
+    .tab-titles .tab-links{
+        font-size: 13px;
+    }
+    .contact-left{
+        flex-basis: 100%;
+    }
+    .contact-right{
+        flex-basis: 100%;
+        margin-left: 40px;
+    }
+    
+    .tab-contents ul li{
+        font-size: 15px;
+       
+    }
+    .tab-contents ul li span{
+        font-size: 17px;  
+        
+    }
+    .contact-left{
+        flex-basis: 100%;
+        
+    }
+    .contact-right{
+        flex-basis: 100%;
+        margin-left: 40px;
+    }
+    .contact-right form .btn{
+        margin-left: 20px;
     }
     .contact-right textarea::placeholder,input::placeholder{
         font-size: 15px;
